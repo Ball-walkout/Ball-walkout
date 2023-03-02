@@ -321,7 +321,6 @@
 "Assets/Script/Camera.cs"
 "Assets/Script/GameStart.cs"
 "Assets/Script/TouchMove.cs"
-"Assets/Scriptss/BallMove.cs"
 -langversion:8.0
 
 /deterministic
