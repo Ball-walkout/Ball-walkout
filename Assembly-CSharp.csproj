@@ -37,9 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Camera.cs" />
+     <Compile Include="Assets\Script\ButtonMove.cs" />
      <Compile Include="Assets\Script\GameStart.cs" />
      <Compile Include="Assets\Script\TouchMove.cs" />
-     <Compile Include="Assets\Script\ButtonMove.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
