@@ -36,11 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\PlayerCamera.cs" />
      <Compile Include="Assets\Script\resCamera.cs" />
+     <Compile Include="Assets\Script\getoff.cs" />
      <Compile Include="Assets\Script\GameStart.cs" />
      <Compile Include="Assets\Script\TouchMove.cs" />
-     <Compile Include="Assets\Script\PlayerCamera.cs" />
-     <Compile Include="Assets\Script\getoff.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
