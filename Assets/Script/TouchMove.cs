@@ -27,7 +27,7 @@ public class TouchMove : MonoBehaviour
 
                 //Debug.Log("Ended - 손가락이 화면 위를 벗어나 떨어지게 된 그 순간, 터치가 끝난 상태: " + Input.GetTouch(0).position);
                 // 왼쪽 터치 시 왼쪽으로 이동
-                if (Input.GetTouch(0).position.x > (1920/2))
+                if (Input.GetTouch(0).position.x > (1080/2))
 
                 {
                     velocity = new Vector3(Input.GetTouch(0).pressure, 0, 1);
