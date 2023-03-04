@@ -6,8 +6,10 @@ using UnityEngine;
 // https://www.engedi.kr/unity/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=3955143&t=board
 public class TouchMove : MonoBehaviour
 {
-    private float speed = 5f;
+    public float speed = 5f;
     private Rigidbody rig;
+    public float jumpForce = 1.0f;
+    public bool isRale = true;
 
     void Start()
     {
@@ -17,23 +19,23 @@ public class TouchMove : MonoBehaviour
     private Vector3 velocity;
     void Update()
     {
-        if (Input.touchCount > 0)
-
+        Touch();
+    }
+    
+    void Touch()
+    {
+        if (Input.touchCount > 0 && isRale)
         {
             // 터치 끝났을 때
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
-
             {
-
                 //Debug.Log("Ended - 손가락이 화면 위를 벗어나 떨어지게 된 그 순간, 터치가 끝난 상태: " + Input.GetTouch(0).position);
                 // 왼쪽 터치 시 왼쪽으로 이동
-                if (Input.GetTouch(0).position.x > (1080/2))
-
+                if (Input.GetTouch(0).position.x > (1920/2))
                 {
                     velocity = new Vector3(Input.GetTouch(0).pressure, 0, 1);
                     velocity *= speed;
                     rig.velocity = velocity;
-
                 } else
                 // 오른쪽 터치 시 오른쪽으로 이동
                 {
@@ -41,9 +43,20 @@ public class TouchMove : MonoBehaviour
                     velocity *= speed;
                     rig.velocity = velocity;
                 }
-
             }
+        }
+    }
 
+    public void Jump()
+    {
+        if(isRale)
+            rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        isRale = false;
+    }
+
+    void OnCollisionEnter(Collision other) {
+        if(other.gameObject.CompareTag("rale")){
+            isRale = true;
         }
     }
 }
