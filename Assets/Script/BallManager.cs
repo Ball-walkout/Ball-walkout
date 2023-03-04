@@ -15,7 +15,7 @@ public class BallManager : MonoBehaviour
         {
             // 장애물 종류별 스코어 변경 필요 **
             GameManager.Instance.SetScore(10);
-            Destroy(other.gameObject, 1f);
+            Destroy(other.gameObject, 30f);
         }
     }
 }
