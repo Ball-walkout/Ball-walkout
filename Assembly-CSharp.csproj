@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Camera.cs" />
-     <Compile Include="Assets\Script\ButtonMove.cs" />
      <Compile Include="Assets\Script\GameStart.cs" />
      <Compile Include="Assets\Script\TouchMove.cs" />
     <Reference Include="UnityEngine">
