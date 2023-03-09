@@ -68,15 +68,23 @@ public class GameManager : MonoBehaviour
         ui.UpdateScore();
     }
 
+    [SerializeField] private Transform rails;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // rails.GetComponentsInChildren<>
+        // CreateCoins();
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    private IEnumerator CreateCoins()
+    {
         
+        return null;
     }
 }

@@ -164,25 +164,11 @@ public class TouchMove : MonoBehaviour
         rig = GetComponent<Rigidbody>();
     }
 
-    private Vector3 velocity;
     void Update()
     {
         //Touch();
-        Scroll();
     }
     
-    private Vector3 startPos, deltaPos, nowPos;
-    private void Scroll()
-    {
-        if(Input.GetMouseButton(0))
-        {
-            nowPos = (Input.touchCount == 0) ? Input.mousePosition : (Vector3)Input.GetTouch(0).position;
-            // 터치 시작
-            if(Input.GetMouseButtonDown(0))
-                startPos = nowPos;
-            deltaPos = startPos - nowPos;
-        }
-    }
 
     void Touch()
     {
