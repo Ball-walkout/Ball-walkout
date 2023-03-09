@@ -36,19 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
+     <Compile Include="Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
      <Compile Include="Assets\Script\PlayerCamera.cs" />
      <Compile Include="Assets\Script\resCamera.cs" />
+     <Compile Include="Assets\PathCreator\Examples\Scripts\PathPlacer.cs" />
      <Compile Include="Assets\Script\BallManager.cs" />
+     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSceneTool.cs" />
+     <Compile Include="Assets\PathCreator\Examples\Scripts\PathFollower.cs" />
      <Compile Include="Assets\Script\getoff.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
      <Compile Include="Assets\Script\TouchMove.cs" />
      <Compile Include="Assets\Script\UIManager.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSceneTool.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\PathPlacer.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\PathFollower.cs" />
-     <Compile Include="Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
