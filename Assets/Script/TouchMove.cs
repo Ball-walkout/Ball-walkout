@@ -11,9 +11,13 @@ public class TouchMove : MonoBehaviour
         float distance = Camera.main.WorldToScreenPoint(transform.position).z;
 
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
+       
         Vector3 objPos = Camera.main.ScreenToWorldPoint(mousePos);
+        
+        if(objPos.z < 0){
+            objPos.z = 0.0f;
+        }
 
-        //objPos.z = 0;
         objPos.y = -1.85f;
         transform.position = objPos;
     }
